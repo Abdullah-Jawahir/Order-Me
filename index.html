@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Orders</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+
+    <script src="./script.js" defer></script>
+    <!-- <script src="./scriptTwo.js" defer></script> -->
+</head>
+<body>
+    <div class="orders">
+
+        <div class="wrapper" id="wrap">
+            <p class="message-box">
+                Thank You for purchasing our Food!
+                Have a <span>Nice Day!</span>
+            </p>
+        </div>
+
+        <h1 class="main-head">my orders</h1>
+        <ul id="item-list">
+            <li class="item">
+                <div class="image">
+                    <img src="https://images.pexels.com/photos/1260968/pexels-photo-1260968.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="pizza">
+                </div>
+                <div class="name-price">
+                    <p class="food-name">pizza</p>
+                    <p class="price amount" id="pizza-price">$2</p>
+                </div>
+                <div class="counter">
+                    <i class="fa fa-minus-circle" id="sub-pizza" onClick="subPizza()"></i>
+                    <p class="food-count amount" id="pizza-count">1</p>
+                    <i class="fa fa-plus-circle" id="add-pizza" onClick="addPizza()"></i>
+                </div>
+            </li>
+            <li class="item">
+                <div class="image">
+                    <img src="https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="pancake">
+                </div>
+                <div class="name-price">
+                    <p class="food-name">pancake</p>
+                    <p class="price amount" id="pancake-price">$3</p>
+                </div>
+                <div class="counter">
+                    <i class="fa fa-minus-circle"></i>
+                    <p class="food-count amount" id="pancake-count">3</p>
+                    <i class="fa fa-plus-circle"></i>
+                </div>
+            </li>
+            <li class="item">
+                <div class="image">
+                    <img src="https://images.pexels.com/photos/70497/pexels-photo-70497.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="burger">
+                </div>
+                <div class="name-price">
+                    <p class="food-name">burger</p>
+                    <p class="price amount" id="burger-price">$5</p>
+                </div>
+                <div class="counter">
+                    <i class="fa fa-minus-circle"></i>
+                    <p class="food-count amount" id="burger-count">4</p>
+                    <i class="fa fa-plus-circle"></i>
+                </div>
+            </li>
+        </ul>
+
+        <div class="checkout">
+            <h2 class="sub-head">checkout</h2>
+            <div class="charges">
+                <p>total price</p>
+                <p class="bold amount" id="total-price">$31</p>
+            </div>
+            <div class="charges">
+                <p>delivery charges</p>
+                <p class="bold amount" id="delivery-charge">$1</p>
+            </div>
+            <div class="charges">
+                <p class="bold">bill amount</p>
+                <p class="bold amount" id="bill-amount">$32</p>
+            </div>
+
+            <button id="place-btn">
+                place order
+            </button>
+            <button id="cancel-btn">
+                cancel order
+            </button>
+        </div>
+    </div>
+
+</body>
+</html>
